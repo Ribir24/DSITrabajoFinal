@@ -1,34 +1,35 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/styles.uss?fileID=7433441132597879392&amp;guid=35e8e32ce4c1e3b4f8775387471d2286&amp;type=3#styles" />
     <ui:VisualElement name="Background" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/0x0.png?fileID=2800000&amp;guid=2ab433317d8f3344e8a5a64333616074&amp;type=3#0x0&quot;); width: 100%; flex-direction: row; height: 100%; max-width: 100%; min-width: 100%; min-height: 100%; max-height: 100%;">
         <ui:VisualElement name="IZQ" style="flex-grow: 1; width: 40%; height: 100%; max-width: 40%; min-width: 40%; min-height: 100%; max-height: 100%;">
             <ui:VisualElement name="Phone" style="flex-grow: 1; background-color: rgb(247, 244, 229); border-top-left-radius: 45px; border-top-right-radius: 45px; border-bottom-right-radius: 45px; border-bottom-left-radius: 45px; position: relative; left: 10%; height: 401px;">
                 <ui:Label tabindex="-1" text="Apps&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 20%; max-width: 100%; min-width: 100%; max-height: 20%; min-height: 20%; font-size: 30px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                 <ui:VisualElement name="APPS" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 60%; max-height: 60%; min-height: 60%; flex-direction: row; flex-wrap: wrap;">
                     <ui:VisualElement name="Esp" style="flex-grow: 1; width: 5%; max-width: 5%; min-width: 5%; height: 33%; max-height: 33%; min-height: 33%;" />
-                    <ui:VisualElement name="AppNotesButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/notes-1_orig.png?fileID=2800000&amp;guid=addbf698bdeb4424da149713f1a40ace&amp;type=3#notes-1_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
+                    <ui:VisualElement name="AppNotesButton" class="appButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/notes-1_orig.png?fileID=2800000&amp;guid=addbf698bdeb4424da149713f1a40ace&amp;type=3#notes-1_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
                     <ui:VisualElement name="Esp" style="flex-grow: 1; width: 5%; max-width: 5%; min-width: 5%; height: 33%; max-height: 33%; min-height: 33%;" />
-                    <ui:VisualElement name="AppShopButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/store_orig.png?fileID=2800000&amp;guid=bc3be8a01a32079489f5df05ae203e2e&amp;type=3#store_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
+                    <ui:VisualElement name="AppShopButton" class="appButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/store_orig.png?fileID=2800000&amp;guid=bc3be8a01a32079489f5df05ae203e2e&amp;type=3#store_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
                     <ui:VisualElement name="Esp" style="flex-grow: 1; width: 5%; max-width: 5%; min-width: 5%; height: 33%; max-height: 33%; min-height: 33%;" />
-                    <ui:VisualElement name="AppPassportButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/passport_orig.png?fileID=2800000&amp;guid=74b7a0026b426f54f912c439b550495d&amp;type=3#passport_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
+                    <ui:VisualElement name="AppPassportButton" class="appButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/passport_orig.png?fileID=2800000&amp;guid=74b7a0026b426f54f912c439b550495d&amp;type=3#passport_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
                     <ui:VisualElement name="Esp" style="flex-grow: 1; width: 5%; max-width: 5%; min-width: 5%; height: 33%; max-height: 33%; min-height: 33%;" />
-                    <ui:VisualElement name="AppMessageButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/messages_orig.png?fileID=2800000&amp;guid=04dc7b3d7b823214d8426fb4891e145a&amp;type=3#messages_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
+                    <ui:VisualElement name="AppMessagesButton" class="appButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/messages_orig.png?fileID=2800000&amp;guid=04dc7b3d7b823214d8426fb4891e145a&amp;type=3#messages_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
                     <ui:VisualElement name="Esp" style="flex-grow: 1; width: 5%; max-width: 5%; min-width: 5%; height: 33%; max-height: 33%; min-height: 33%;" />
-                    <ui:VisualElement name="AppCameraButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/camera_orig.png?fileID=2800000&amp;guid=577290732c3b6f04bac040b4ed678a86&amp;type=3#camera_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
+                    <ui:VisualElement name="AppCameraButton" class="appButton" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/camera_orig.png?fileID=2800000&amp;guid=577290732c3b6f04bac040b4ed678a86&amp;type=3#camera_orig&quot;); height: 33%; max-height: 33%; min-height: 33%; width: 28%; max-width: 28%; min-width: 28%;" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Espacio" style="flex-grow: 1; width: 10%; height: 100%; max-width: 10%; min-width: 10%; min-height: 100%; max-height: 100%;" />
         <ui:VisualElement name="DER" style="flex-grow: 1; width: 50%; height: 100%; max-width: 50%; min-width: 50%; min-height: 100%; max-height: 100%;">
             <ui:VisualElement name="Phone" style="flex-grow: 1; background-color: rgb(247, 244, 229); border-top-left-radius: 45px; border-top-right-radius: 45px; border-bottom-right-radius: 45px; border-bottom-left-radius: 45px; position: relative; left: auto; height: 401px;">
-                <ui:VisualElement name="AppNotes" style="flex-grow: 1; display: flex;">
+                <ui:VisualElement name="AppNotes" style="flex-grow: 1; display: none;">
                     <ui:Label tabindex="-1" text="Notas&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 20%; max-width: 100%; min-width: 100%; max-height: 20%; min-height: 20%; font-size: 30px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                     <ui:VisualElement name="TF" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 60%; max-height: 60%; min-height: 60%; flex-direction: row; flex-wrap: wrap;">
                         <ui:TextField picking-mode="Ignore" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Buttons" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 10%; max-height: 10%; min-height: 10%; flex-direction: row; flex-wrap: wrap;">
-                        <ui:Button text="Guardar&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
+                        <ui:Button text="Guardar&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SaveNotes" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
                         <ui:VisualElement name="Espacio" style="flex-grow: 1; width: 10%; height: 100%; max-width: 10%; min-width: 10%; min-height: 100%; max-height: 100%;" />
-                        <ui:Button text="Recuperar" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
+                        <ui:Button text="Recuperar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RecupNotes" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="AppShop" style="flex-grow: 1; display: none;">
@@ -36,21 +37,22 @@
                     <ui:VisualElement name="APPS" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 60%; max-height: 60%; min-height: 60%; flex-direction: column; flex-wrap: wrap;">
                         <ui:Label tabindex="-1" text="Comprar Napos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 61%; height: 5%; max-width: 61%; min-width: 61%; max-height: 5%; min-height: 5%; font-size: 12px; -unity-font-style: italic; -unity-text-align: upper-center;" />
                         <ui:VisualElement style="flex-grow: 1; width: 40%; max-width: 40%; min-width: 40%; height: 40%; max-height: 40%; min-height: 40%; background-image: url(&quot;project://database/Assets/Assets/napolitana.png?fileID=2800000&amp;guid=30532e04a2997e24bbce5b0d647899d9&amp;type=3#napolitana&quot;);" />
-                        <ui:SliderInt label="Cantidad&#10;" high-value="10" />
-                        <ui:Button text="Comprar" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                        <ui:SliderInt label="Cantidad&#10;" high-value="10" name="SliderShop" />
+                        <ui:Label tabindex="-1" text="Cantidad: 0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Cant" />
+                        <ui:Button text="Comprar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BuyButton" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="AppPassport" style="flex-grow: 1; display: none;">
+                <ui:VisualElement name="AppPassport" style="flex-grow: 1; display: flex;">
                     <ui:Label tabindex="-1" text="Pasaporte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 20%; max-width: 100%; min-width: 100%; max-height: 20%; min-height: 20%; font-size: 30px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                     <ui:VisualElement name="Mid" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 60%; max-height: 60%; min-height: 60%; flex-direction: row; flex-wrap: wrap;">
                         <ui:VisualElement name="Image" style="flex-grow: 1; height: 50%; max-height: 50%; min-height: 50%; width: 80%; max-width: 80%; min-width: 80%; background-image: url(&quot;project://database/Assets/Assets/Glep.png?fileID=2800000&amp;guid=941004cbea060274c892783a1db9bdb6&amp;type=3#Glep&quot;);" />
-                        <ui:Label tabindex="-1" text="Nombre: glep" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 40%; height: 25%; max-width: 40%; min-width: 40%; max-height: 25%; min-height: 25%; font-size: 10px; -unity-font-style: bold; -unity-text-align: upper-center;" />
-                        <ui:Label tabindex="-1" text="Apellido: Glep&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 40%; height: 25%; max-width: 40%; min-width: 40%; max-height: 25%; min-height: 25%; font-size: 10px; -unity-font-style: bold; -unity-text-align: upper-center;" />
+                        <ui:TextField picking-mode="Ignore" value="Nombre: Glep" name="Name" style="width: 40%; max-width: 40%; min-width: 40%; height: 25%; max-height: 25%; min-height: 25%; font-size: 7px;" />
+                        <ui:TextField picking-mode="Ignore" value="Apellido: Glep" name="Surname" style="width: 40%; max-width: 40%; min-width: 40%; height: 25%; max-height: 25%; min-height: 25%; font-size: 7px;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Buttons" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 10%; max-height: 10%; min-height: 10%; flex-direction: row; flex-wrap: wrap;">
-                        <ui:Button text="Guardar&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
+                        <ui:Button text="Guardar&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SavePass" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
                         <ui:VisualElement name="Espacio" style="flex-grow: 1; width: 10%; height: 100%; max-width: 10%; min-width: 10%; min-height: 100%; max-height: 100%;" />
-                        <ui:Button text="Recuperar" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
+                        <ui:Button text="Recuperar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RecupPass" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="AppMessages" style="flex-grow: 1; display: none;">
@@ -70,6 +72,4 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement style="flex-grow: 1;" />
-    <ui:VisualElement style="flex-grow: 1;" />
 </ui:UXML>

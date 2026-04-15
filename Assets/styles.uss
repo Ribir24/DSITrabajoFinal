@@ -1,0 +1,4 @@
+.appButton:hover {
+    scale: 1.1 1.1;
+    rotate: 3deg;
+}
