@@ -32,7 +32,7 @@
                         <ui:Button text="Recuperar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="RecupNotes" style="height: 100%; max-height: 100%; min-height: 100%; width: 40%; max-width: 40%; min-width: 40px;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="AppShop" style="flex-grow: 1; display: flex;">
+                <ui:VisualElement name="AppShop" style="flex-grow: 1; display: none;">
                     <ui:Label tabindex="-1" text="Tienda&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 20%; max-width: 100%; min-width: 100%; max-height: 20%; min-height: 20%; font-size: 30px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                     <ui:VisualElement name="APPS" style="flex-grow: 1; width: 100%; max-width: 100%; min-width: 100%; height: 70%; max-height: 70%; min-height: 70%; flex-direction: column; flex-wrap: wrap;">
                         <ui:Label tabindex="-1" text="Comprar Napos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 61%; height: 5%; max-width: 61%; min-width: 61%; max-height: 5%; min-height: 5%; font-size: 12px; -unity-font-style: italic; -unity-text-align: upper-center;" />
@@ -67,7 +67,7 @@
                         <ui:Label tabindex="-1" text="Tu a mi tambien jasdjjfç" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 50%; height: 20%; max-width: 50%; min-width: 50%; max-height: 20%; min-height: 20%; font-size: 10px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="AppCamera" style="flex-grow: 1; display: none;">
+                <ui:VisualElement name="AppCamera" style="flex-grow: 1; display: flex;">
                     <ui:Label tabindex="-1" text="Camara" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 20%; max-width: 100%; min-width: 100%; max-height: 20%; min-height: 20%; font-size: 30px; -unity-font-style: bold; -unity-text-align: upper-center;" />
                     <ui:VisualElement name="Pim" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Assets/pim.jpeg?fileID=2800000&amp;guid=26f3609b50b8b9841a74c7b6ab3bdda3&amp;type=3#pim&quot;); height: 40%; max-height: 40%; min-height: 40%;" />
                     <ui:Button text="Foto" parse-escape-sequences="true" display-tooltip-when-elided="true" />
