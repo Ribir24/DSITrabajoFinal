@@ -14,6 +14,9 @@ public class DSIFinal : MonoBehaviour
     Label Cant;
     Button BuyButton;
 
+    VisualElement Carrito;
+    VisualTreeAsset napoTemplate;
+
     TextField Name, Surname;
     Button SavePass, RecupPass;
 
@@ -52,6 +55,8 @@ public class DSIFinal : MonoBehaviour
         Cant = AppShop.Q<Label>("Cant");
         BuyButton = AppShop.Q<Button>("BuyButton");
 
+        Carrito = AppShop.Q<VisualElement>("Carrito");
+
         Name = AppPassport.Q<TextField>("Name");
         Surname = AppPassport.Q<TextField>("Surname");
         SavePass = AppPassport.Q<Button>("SavePass");
@@ -59,6 +64,8 @@ public class DSIFinal : MonoBehaviour
 
         notesPath = Path.Combine(Application.persistentDataPath, "notes.json");
         passPath = Path.Combine(Application.persistentDataPath, "pass.json");
+
+        napoTemplate = Resources.Load<VisualTreeAsset>("Napolitana");
 
         HideAll();
 
@@ -73,11 +80,26 @@ public class DSIFinal : MonoBehaviour
 
         SliderShop.RegisterValueChangedCallback(e => {
             Cant.text = "Cantidad: " + e.newValue;
+
+            var existentes = Carrito.Query<VisualElement>(className: "napoItem").ToList();
+            foreach (var el in existentes)
+                el.RemoveFromHierarchy();
+
+            for (int i = 0; i < e.newValue; i++)
+            {
+                VisualElement item = napoTemplate.Instantiate();
+                item.AddToClassList("napoItem");
+                Carrito.Add(item);
+            }
         });
 
         BuyButton.clicked += () => {
             SliderShop.SetValueWithoutNotify(0);
             Cant.text = "Napochocos compradas con exito";
+
+            var existentes = Carrito.Query<VisualElement>(className: "napoItem").ToList();
+            foreach (var el in existentes)
+                el.RemoveFromHierarchy();
         };
 
         SavePass.clicked += SavePassFunc;
